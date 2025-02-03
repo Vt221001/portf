@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Silkscreen:wght@400;700&family=Sour+Gummy:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="text-white font-sans">
+    <section class="bg-[url('../asset/background.jpg')] bg-cover bg-center overflow-x-auto">
+        <!-- Container -->
+        <div class="z-0 bg-black/60 w-[95%] max-w-7xl h-auto mx-auto mt-10 border rounded-lg">
+            <!-- Header -->
+            <header>
+                <nav class="flex justify-between items-center px-6 py-4">
+                    <div class="text-2xl font-bold">SN.</div>
+                    <!-- Mobile Menu Icon -->
+                    <div class="lg:hidden">
+                        <i class="fa-solid fa-bars text-2xl cursor-pointer" id="menu-icon" onclick="toggleMenu()"></i>
+                    </div>
+                    <!-- Navigation Links -->
+                    <ul id="nav-links" class="hidden lg:flex flex-col lg:flex-row text-center gap-6 lg:gap-10 lg:p-0 p-8 absolute lg:static top-[100px] lg:top-0 left-0 w-full lg:w-auto lg:bg-transparent bg-black lg:rounded-none rounded-md text-lg lg:opacity-100 opacity-0 transition-all duration-300 ease-in-out">
+                        <li><a href="./index.html" class="hover:text-gray-400">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-gray-400">About</a></li>
+                        <li><a href="./project.html" class="hover:text-gray-400">Projects</a></li>
+                        <li><a href="./resume.html" class="hover:text-gray-400">Resume</a></li>
+                    </ul>
+                    <!-- Contact Button -->
+                    <div class="hidden lg:block">
+                        <a href="mailto:snehasinha0905@gmail.com" class="hover:text-blue-100 py-3 px-5 bg-blue-600 text-white rounded-full transition duration-200">snehasinha0905@gmail.com</a>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Main Content -->
+            <div class="py-10 px-4">
+                <h1 class="text-center text-3xl md:text-5xl lg:text-8xl font-serif tracking-widest">
+                    Sneha <span class="block md:inline">Sinha</span>
+                </h1>
+                <!-- Profile Section -->
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6 mt-10">
+                    <div class="md:w-1/2 w-full mt-6">
+                        <ul class="text-lg font-semibold flex flex-col gap-4">
+                            <a href="#" class="flex items-center gap-2 transition transform hover:scale-105">
+                                <i class="fa-solid fa-arrows-spin text-[#C4E538]"></i>
+                                <li>Proficiency in Front-End Development</li>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 transition transform hover:scale-105">
+                                <i class="fa-solid fa-arrows-spin text-[#C4E538]"></i>
+                                <li>Responsive Web Design</li>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 transition transform hover:scale-105">
+                                <i class="fa-solid fa-arrows-spin text-[#C4E538]"></i>
+                                <li>UI/UX</li>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 transition transform hover:scale-105">
+                                <i class="fa-solid fa-arrows-spin text-[#C4E538]"></i>
+                                <li>JavaScript</li>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 transition transform hover:scale-105">
+                                <i class="fa-solid fa-arrows-spin text-[#C4E538]"></i>
+                                <li>Tailwind</li>
+                            </a>
+                        </ul>
+                        <div>
+                            <ul class="flex ml-[30px] gap-8 mt-[60px]">
+                                <a href="">
+                                    <li><i class="fa-brands fa-linkedin text-[30px] transition hover:text-[#C4E538]"></i></li>
+                                </a>
+                                <a href="">
+                                    <li><i class="fa-brands fa-github text-[30px] transition-all hover:text-[#C4E538]"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="relative w-full md:w-1/3 mx-auto mt-6 group">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 via-blue-300 to-blue-500 blur-3xl rounded-full z-0 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                        <img src="../asset/codingGirl.webp" alt="Coding Girl" class="relative z-10 rounded-lg w-full">
+                    </div>
+                    
+                    <div class="md:w-1/3 w-full md:mt-[100px] mt-6 text-md md:text-right text-left">
+                        <p> I hold certifications in web development and have a strong foundation in front-end HTML, CSS, JavaScript, and Tailwind framework.</p>
+                        <div class="flex md:justify-end justify-center gap-4 align-center">
+                            <button class="mt-[20px] border-[#C4E538] border-2 text-[#C4E538] rounded-full w-[50px] h-[50px] transition transform hover:scale-110"><i class="fa-brands fa-squarespace text-[30px]"></i></button>
+                            <a href="./resume.html">
+                                <button class="text-lg mt-5 bg-[#C4E538] rounded-full px-7 py-3 transition transform hover:scale-110 text-black font-semibold">HIRE ME</button>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 px-4 space-y-4">
+        <h2 class="text-center text-4xl font-bold text-[#C4E538] mb-8">Skills</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="flex items-center bg-gray-800 border border-gray-700 p-4 rounded hover:bg-gray-700">
+                <img src="../asset/png-javascript-badge-picture-8.png" alt="JavaScript" class="w-[60px] mr-4">
+                <span class="text-xl font-bold">JavaScript</span>
+            </div>
+            <div class="flex items-center bg-gray-800 border border-gray-700 p-4 rounded hover:bg-gray-700">
+                <img src="../asset/free-tailwind-9294852-7577995.webp" alt="Tailwind" class="w-[60px] mr-4">
+                <span class="text-xl font-bold">Tailwind</span>
+            </div>
+            <div class="flex items-center bg-gray-800 border border-gray-700 p-4 rounded hover:bg-gray-700">
+                <img src="../asset/222-2224712_react-react-logo-png.png" alt="React" class="w-[60px] mr-4">
+                <span class="text-xl font-bold">React</span>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="flex items-center bg-gray-800 border border-gray-700 p-4 rounded hover:bg-gray-700">
+                <img src="../asset/9-2-responsive-web-design-png-file.png" alt="JavaScript" class="w-[60px] mr-4">
+                <span class="text-xl font-bold">Proficiency in Front-End Development</span>
+            </div>
+            <div class="flex items-center bg-gray-800 border border-gray-700 p-4 rounded hover:bg-gray-700">
+                <img src="../asset/frontend-developer.webp" alt="Tailwind" class="w-[60px] mr-4">
+                <span class="text-xl font-bold">Responsive Web Design</span>
+            </div>
+            <div class="flex items-center bg-gray-800 border border-gray-700 p-4 rounded hover:bg-gray-700">
+                <img src="../asset/ui-ux-icon-sign-design-free-png.webp" alt="React" class="w-[60px] mr-4">
+                <span class="text-xl font-bold">UI/UX</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-10 px-4 bg-gray-900 text-white">
+        <h2 class="text-center text-4xl font-bold mb-8">Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:bg-gray-700">
+                <img src="../asset/Untitled.jpg" alt="">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:bg-gray-700">
+                <img src="../asset/Untitled design (2).png" alt="">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:bg-gray-700">
+                <img src="../asset/Untitled design (4).png" alt="">
+            </div>
+        </div>
+        <div class="flex justify-center mt-8">
+           <a href="./project.html">
+                <button class="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-500">View More</button>
+           </a>
+        </div>
+    </section>
+    
+    <footer class="bg-black w-full py-8">
+        <div class="md:flex justify-between items-center text-white text-center md:text-left">
+            <!-- Navigation Section -->
+            <div class="md:w-1/3 w-full px-4 mb-8 md:mb-0">
+                <h1 class="text-[20px] md:text-[24px] font-bold">Navigation</h1>
+                <ul class="mt-4 space-y-3">
+                    <a href="index.html" class="flex items-center gap-2 hover:text-[#C4E538] transition-all duration-150">
+                        <span>Home</span>
+                    </a>
+                    <a href="about.html" class="flex items-center gap-2 hover:text-[#C4E538] transition-all duration-150">
+                        <span>About</span>
+                    </a>
+                    <a href="./project.html" class="flex items-center gap-2 hover:text-[#C4E538] transition-all duration-150">
+                        <span>Project</span>
+                    </a>
+                    <a href="./resume.html" class="flex items-center gap-2 hover:text-[#C4E538] transition-all duration-150">
+                        <span>Resume</span>
+                    </a>
+                </ul>
+            </div>
+    
+            <!-- Follow Me Section -->
+            <div class="md:w-1/3 w-full px-4 mb-8 md:mb-0">
+                <h1 class="text-[20px] md:text-[24px] font-bold">Follow Me</h1>
+                <div class="mt-4 space-y-4">
+                    <a href="https://github.com/Sneh-a123" target="_blank">
+                        <button class="w-[50%] md:w-auto border rounded-full px-7 py-2 bg-gradient-to-r from-[#C4E538] to-[#5CB85C] text-black font-semibold transition-all duration-200 hover:scale-95">
+                            GitHub
+                        </button>
+                    </a><br><br>
+                    <a href="https://www.linkedin.com/in/sneha-sinha-53b74b230/" target="_blank">
+                        <button class="w-[50%] md:w-auto border rounded-full px-7 py-2 bg-gradient-to-r from-[#C4E538] to-[#5CB85C] text-black font-semibold transition-all duration-200 hover:scale-95">
+                            LinkedIn
+                        </button>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Back to Top Section -->
+            <div class="md:w-1/3 w-full px-4">
+                <button onclick="scrollToTop()" class="block border rounded-full px-7 py-2 mx-auto md:mx-0 bg-gradient-to-r from-[#C4E538] to-[#5CB85C] text-black font-semibold transition-all duration-200 hover:scale-95">
+                    <i class="fa-solid fa-arrow-up"></i>&nbsp; Back to Top
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            const menuIcon = document.getElementById('menu-icon');
+            const navLinks = document.getElementById('nav-links');
+            const isOpen = menuIcon.classList.contains('fa-bars');
+            
+            menuIcon.classList.toggle('fa-bars', !isOpen);
+            menuIcon.classList.toggle('fa-times', isOpen);
+            navLinks.classList.toggle('hidden', !isOpen);
+            navLinks.classList.toggle('opacity-100', isOpen);
+        }
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        }
+    </script>
+</body>
+</html>

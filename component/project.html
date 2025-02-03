@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Silkscreen:wght@400;700&family=Sour+Gummy:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
+
+    <header class="bg-black bg-opacity-80 sticky top-0 z-50 shadow-lg">
+        <nav class="flex justify-between items-center px-6 py-4">
+            <div class="text-2xl font-bold">SN.</div>
+            <!-- Mobile Menu Icon -->
+            <div class="lg:hidden">
+                <i class="fa-solid fa-bars text-2xl cursor-pointer" id="menu-icon" onclick="toggleMenu()"></i>
+            </div>
+            <!-- Navigation Links -->
+            <ul id="nav-links" class="hidden lg:flex flex-col lg:flex-row text-center gap-6 lg:gap-10 lg:p-0 p-8 absolute lg:static top-[100px] lg:top-0 left-0 w-full lg:w-auto lg:bg-transparent bg-black lg:rounded-none rounded-md text-lg lg:opacity-100 opacity-0 transition-all duration-300 ease-in-out">
+                <li><a href="./index.html" class="hover:text-gray-400">Home</a></li>
+                <li><a href="./about.html" class="hover:text-gray-400">About</a></li>
+                <li><a href="./project.html" class="hover:text-gray-400">Projects</a></li>
+                <li><a href="./resume.html" class="hover:text-gray-400">Resume</a></li>
+            </ul>
+            <!-- Contact Button -->
+            <div class="hidden lg:block">
+                <a href="mailto:snehasinha0905@gmail.com" class="hover:text-blue-100 py-3 px-5 bg-blue-600 text-white rounded-full transition duration-200">snehasinha0905@gmail.com</a>
+            </div>
+        </nav>
+    </header>
+    <section class="p-6 md:p-12">
+        <h1 class="text-[50px] text-center">Projects</h1><br><br> 
+        <div class="flex flex-col md:flex-row justify-center items-center w-full gap-6">
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img class="w-[70%] md:w-[50%] border-8 max-w-sm" src="../asset/Untitled.jpg" alt="Colorful Tire Website Design">
+            </div>
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <p class="text-gray-200 text-lg leading-relaxed">
+                    Designed in Figma, this landing page features a bold, modern aesthetic with a dark background to highlight vibrant neon elements. The minimalist navigation, striking typography, and geometric visuals reinforce the brand’s focus on stylish, custom-colored tires. A clear CTA (Shop Now) encourages engagement, while the energetic color palette (neon pink, blue, and cyan) adds a dynamic feel. This design balances creativity and functionality, making it visually compelling and user-friendly. 🚀
+                </p>
+            </div>
+        </div> <br>
+        <div class="flex md:flex-row-reverse flex-col justify-center items-center w-full gap-6">
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img class="w-[70%] md:w-[50%] border-8 max-w-sm" src="../asset/Untitled design (2).png" alt="Colorful Tire Website Design">
+            </div>
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <p class="text-gray-200 text-lg leading-relaxed">
+                    Built using HTML, Tailwind CSS, React, and JavaScript, this modern landing page showcases a sleek smartwatch product with a clean UI and interactive elements.
+
+Key Features:
+<ul>
+    <li>✅ Hero Section – Bold typography, high-quality product visuals, and a strong CTA.</li>
+    <li>✅ Feature Highlights – Grid-based layout with icons for easy readability.</li>
+    <li>✅ Client Logos & Testimonials – Adds credibility and trust.</li>
+    <li>✅ New Features Section – Showcases product upgrades with engaging visuals.</li>
+</ul>
+
+This design balances aesthetics and functionality, ensuring a smooth user experience and responsiveness. 🚀
+                </p>
+            </div>
+        </div><br>
+        <div class="flex flex-col md:flex-row justify-center items-center w-full gap-6">
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img class="w-[70%] md:w-[50%] border-8 max-w-sm" src="../asset/Untitled design (4).png" alt="Colorful Tire Website Design">
+            </div>
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <p class="text-gray-200 text-lg leading-relaxed">
+                    Developed using HTML, Tailwind CSS, React, and JavaScript, this travel booking landing page offers a visually appealing and user-friendly interface.
+
+Key Features:
+<ul>
+    <li>✅ Hero Section – Stunning background image, bold typography, and a strong CTA (Book Now).</li>
+    <li>✅ Search Functionality – Intuitive filters for destination, date, and travel type.</li>
+    <li>✅ Holiday Packages Section – Grid-based layout showcasing beautiful travel destinations.</li>
+    <li>✅ Responsive & Modern UI – Clean design with smooth navigation for an engaging user experience.</li>
+</ul>
+
+This design blends aesthetics with functionality, making travel planning seamless and enjoyable. ✈️🌍
+                </p>
+            </div>
+    </section>
+    <footer class="bg-black w-full py-8">
+        <div class="md:flex justify-between items-center text-white text-center md:text-left">
+            <!-- Navigation Section -->
+            <div class="md:w-1/3 w-full px-4 mb-8 md:mb-0">
+                <h1 class="text-[20px] md:text-[24px] font-bold">Navigation</h1>
+                <ul class="mt-4 space-y-3">
+                    <a href="index.html" class="flex items-center gap-2 hover:text-[#C4E538] transition-all duration-150">
+                        <span>Home</span>
+                    </a>
+                    <a href="about.html" class="flex items-center gap-2 hover:text-[#C4E538] transition-all duration-150">
+                        <span>About</span>
+                    </a>
+                    <a href="./project.html" class="flex items-center gap-2 hover:text-[#C4E538] transition-all duration-150">
+                        <span>Project</span>
+                    </a>
+                    <a href="./resume.html" class="flex items-center gap-2 hover:text-[#C4E538] transition-all duration-150">
+                        <span>Resume</span>
+                    </a>
+                </ul>
+            </div>
+    
+            <!-- Follow Me Section -->
+            <div class="md:w-1/3 w-full px-4 mb-8 md:mb-0">
+                <h1 class="text-[20px] md:text-[24px] font-bold">Follow Me</h1>
+                <div class="mt-4 space-y-4">
+                    <a href="https://github.com/Sneh-a123" target="_blank">
+                        <button class="w-[50%] md:w-auto border rounded-full px-7 py-2 bg-gradient-to-r from-[#C4E538] to-[#5CB85C] text-black font-semibold transition-all duration-200 hover:scale-95">
+                            GitHub
+                        </button>
+                    </a><br><br>
+                    <a href="https://www.linkedin.com/in/sneha-sinha-53b74b230/" target="_blank">
+                        <button class="w-[50%] md:w-auto border rounded-full px-7 py-2 bg-gradient-to-r from-[#C4E538] to-[#5CB85C] text-black font-semibold transition-all duration-200 hover:scale-95">
+                            LinkedIn
+                        </button>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Back to Top Section -->
+            <div class="md:w-1/3 w-full px-4">
+                <button onclick="scrollToTop()" class="block border rounded-full px-7 py-2 mx-auto md:mx-0 bg-gradient-to-r from-[#C4E538] to-[#5CB85C] text-black font-semibold transition-all duration-200 hover:scale-95">
+                    <i class="fa-solid fa-arrow-up"></i>&nbsp; Back to Top
+                </button>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            const menuIcon = document.getElementById('menu-icon');
+            const navLinks = document.getElementById('nav-links');
+            const isOpen = menuIcon.classList.contains('fa-bars');
+            
+            menuIcon.classList.toggle('fa-bars', !isOpen);
+            menuIcon.classList.toggle('fa-times', isOpen);
+            navLinks.classList.toggle('hidden', !isOpen);
+            navLinks.classList.toggle('opacity-100', isOpen);
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        }
+    </script>
+
+</body>
+</html>
