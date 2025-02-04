@@ -1,15 +1,7 @@
 {
-    "builds": [
-      {
-        "src": "index.html",
-        "use": "@vercel/static"
-      }
+    "rewrites": [
+      { "source": "/", "destination": "/component/index.html" }
     ],
-    "routes": [
-      {
-        "src": "/assets/(.*)",
-        "dest": "/public/assets/$1"
-      }
-    ]
+    "public": "public"
   }
   
